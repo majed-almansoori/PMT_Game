@@ -16,6 +16,26 @@ function FullScreenDialog({ isOpen, onConfirm }: { isOpen: boolean; onConfirm: (
   return (
     <div className="fullscreen-dialog-overlay">
       <div className="fullscreen-dialog">
+        <p>This game is part of a research project produced by the University of
+            Wisconsin–Madison, United Arab Emirates University (UAEU), and IIT
+            Kharagpur.
+        </p>
+        <p>
+            Contact the author at{" "}
+            <a href="https://majedalmansoori.com" target="_blank" rel="noreferrer">
+              majedalmansoori.com
+            </a>
+        </p>
+        <p>
+          GitHub:{" "}
+          <a
+            href="https://github.com/majed-almansoori/BeSafe_Game"
+            target="_blank"
+            rel="noreferrer"
+          >
+            BeSafe_Game
+          </a>
+        </p>
         <p>This game runs best in full screen landscape mode.</p>
         <button onClick={onConfirm}>Proceed to the game</button>
       </div>
